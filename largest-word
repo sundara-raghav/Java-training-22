@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Enter a string: ");
+      String str = sc.nextLine();
+      String[] words = str.split("\\s+");
+      String largestWord = "";
+      int maxLength = 0;
+      for (String word : words) {
+      if (word.length() > maxLength) {
+         maxLength = word.length();
+        largestWord = word;
+}
+}
+System.out.println("Largest Word: " + largestWord);
+System.out.println("Length: " + maxLength);
+sc.close();
+}
+}
