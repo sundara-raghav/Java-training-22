@@ -1,0 +1,17 @@
+public class Main
+{     
+    
+    static int b;
+	public static void main(String[] args) {
+	    Main o=new Main();
+	   System.out.println(Main.b);
+	   System.out.println(o);
+	    o.b();
+	}
+	static void a(){
+	    System.out.println("Hello A");
+	}
+	void b(){
+	    System.out.println("Hello B");
+	}
+}
